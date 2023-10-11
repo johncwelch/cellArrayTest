@@ -1,0 +1,48 @@
+{
+  "" : {
+    "diagnostics" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTest-master.dia",
+    "emit-module-dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTest-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTest-master-emit-module.dia",
+    "swift-dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTest-master.swiftdeps"
+  },
+  "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/jwelch/Desktop/cellArrayTest/cellArrayTest/cellArrayTestApp.swift" : {
+    "const-values" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.swiftconstvalues",
+    "dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.d",
+    "diagnostics" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.dia",
+    "index-unit-output-path" : "/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.o",
+    "llvm-bc" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.bc",
+    "object" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.o",
+    "swift-dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp.swiftdeps",
+    "swiftmodule" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellArrayTestApp~partial.swiftmodule"
+  },
+  "/Users/jwelch/Desktop/cellArrayTest/cellArrayTest/ContentView.swift" : {
+    "const-values" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/jwelch/Desktop/cellArrayTest/cellClass.swift" : {
+    "const-values" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.swiftconstvalues",
+    "dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.d",
+    "diagnostics" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.dia",
+    "index-unit-output-path" : "/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.o",
+    "llvm-bc" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.bc",
+    "object" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.o",
+    "swift-dependencies" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass.swiftdeps",
+    "swiftmodule" : "/Users/jwelch/Desktop/cellArrayTest/build/cellArrayTest.build/Debug/cellArrayTest.build/Objects-normal/x86_64/cellClass~partial.swiftmodule"
+  }
+}
