@@ -1,12 +1,5 @@
 {
   "source": "/Users/jwelch/Desktop/cellArrayTest/cellArrayTest/cellClass.swift",
-  "tables": {
-    "Localizable": [
-      {
-        "comment": "",
-        "key": "%lld"
-      }
-    ]
-  },
+  "tables": {},
   "version": 1
 }

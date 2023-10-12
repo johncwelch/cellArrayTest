@@ -31,7 +31,7 @@ struct ContentView: View {
 				.disabled(buttonBlank)
 			}
 			VStack {
-				Picker("Board Size", selection: $gridSize) {
+				Picker("Board Size", selection: $theGame.gridSize) {
 				    Text("3").tag(3)
 				    Text("4").tag(4)
 				    Text("5").tag(5)
@@ -50,55 +50,52 @@ struct ContentView: View {
 
 				    //this is how you initiate actions based on a change event
 				    //test func to show size of board based on selection
-					.onChange(of: gridSize) {
+					/*.onChange(of: gridSize) {
 					    print("new board size is: \(gridSize)")
 						theGame = Game(gridSize: gridSize)
 						print("\(theGame.gridSize)")
-					}
+					}*/
 			}
 
 		}
 		Grid(horizontalSpacing: 0, verticalSpacing: 0) {
-			
 			ForEach(0..<theGame.gridSize, id: \.self) {
 				row in
 				GridRow {
 					ForEach(0..<theGame.gridSize, id: \.self) { col in
 						GeometryReader { proxy in
-							//let index = row * gridSize + col
+							//set the index for the grid
 							let index = (row * theGame.gridSize) + col
+							//sanity check to avoid out of bounds errors
+							if index <= ((theGame.gridSize * theGame.gridSize) - 1) {
+								//sset up what the buttons do
+								Button {
+									var theTuple = doSomethingElseOnClick(for: theGame.gridCellArr[index].index, myArray: theGame.gridCellArr)
+									theGame.gridCellArr[index].backCol = theTuple.myColor
+									theGame.gridCellArr[index].title = theTuple.myTitle
+									buttonBlank = theTuple.myCommitButtonStatus
 
-							//ButtonCell(viewModel: buttonViewModels[index])
+									//print("button coords are: \(theGame.gridCellArr[index].xCoord),\(theGame.gridCellArr[index].yCoord)")
+									//print("Button index is: \(theGame.gridCellArr[index].index)")
+								} label: {
+									Text(theGame.gridCellArr[index].title)
+										.font(.system(size: 36, weight: .heavy, design: .serif))
+										//.fontWeight(.heavy)
+										.frame(width: proxy.frame(in: .global).width,height: proxy.frame(in: .global).height)
+								}
+								.background(theGame.gridCellArr[index].backCol)
+								.border(Color.black)
 
-							Button {
-								var theTuple = doSomethingElseOnClick(for: theGame.gridCellArr[index].index, myArray: theGame.gridCellArr)
-								theGame.gridCellArr[index].backCol = theTuple.myColor
-								theGame.gridCellArr[index].title = theTuple.myTitle
-								//buttonBlank = theTuple.myTitle.isEmpty
-								buttonBlank = theTuple.myCommitButtonStatus
-
-								//print("\(buttonBlank)")
-								//print("\(index)")
-								print("coords are: \(theGame.gridCellArr[index].xCoord),\(theGame.gridCellArr[index].yCoord)")
-								print("button id is: \(theGame.gridCellArr[index].id)")
-							} label: {
-								Text(theGame.gridCellArr[index].title)
-									.font(.system(size: 36, weight: .heavy, design: .serif))
-									//.fontWeight(.heavy)
-									.frame(width: proxy.frame(in: .global).width,height: proxy.frame(in: .global).height)
+								.onAppear(perform: {
+									theGame.gridCellArr[index].xCoord = col
+									theGame.gridCellArr[index].yCoord = row
+								})
 							}
-							.background(theGame.gridCellArr[index].backCol)
-							.border(Color.black)
-							.onAppear(perform: {
-								theGame.gridCellArr[index].xCoord = col
-								//print("the col is: \(col)")
-								theGame.gridCellArr[index].yCoord = row
-								//print("the row is: \(row)")
-							})
 						}
 					}
 				}
 			}
+			.id(theGame.gridSize)
 		}
 	}
 }

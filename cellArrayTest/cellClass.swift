@@ -9,9 +9,9 @@ import SwiftUI
 import Foundation
 import Observation
 
-
+//class with the button data
 @Observable  class Cell: Identifiable {
-	let id = UUID()
+	var id = UUID()
 	var title: String = ""
 	var buttonToggled: Bool = false
 	var index: Int = 0
@@ -20,28 +20,24 @@ import Observation
 	var backCol: Color = .gray
 }
 
+//class that is a collection of cells that are attached to the buttons in contentview
 @Observable class Game {
-	var gridSize: Int
+	//this sets the size of the grid, passsed when creating the array
+	var gridSize: Int {
+		didSet {
+			//builds the array based on the int passed in which is set in the picker
+			gridCellArr = buildStructArray(theGridSize: gridSize)
+		}
+	}
+	
+	//create the array var
 	var gridCellArr: [Cell] = []
-
-    init(gridSize: Int) {
-	   self.gridSize = gridSize
-	   self.gridCellArr = buildStructArray(theGridSize: gridSize)
-    }
-
-    func buildStructArray(theGridSize: Int) -> [Cell] {
-	   var myStructArray: [Cell] = []
-	   let arraySize = (theGridSize * theGridSize)
-	   for i in 0..<arraySize {
-		  myStructArray.append(Cell())
-	   }
-
-	    for i in 0..<arraySize {
-		    myStructArray[i].index = i
-	    }
-
-	   return myStructArray
-    }
+	
+	//initialization 
+	init(gridSize: Int) {
+		self.gridSize = gridSize
+		self.gridCellArr = buildStructArray(theGridSize: gridSize)
+	}
 }
 
 func buildStructArray(theGridSize: Int) -> [Cell] {
@@ -49,11 +45,9 @@ func buildStructArray(theGridSize: Int) -> [Cell] {
 	let arraySize = (theGridSize * theGridSize) - 1
 	for i in 0...arraySize {
 		myStructArray.append(Cell())
-	}
-
-	for i in 0...arraySize {
 		myStructArray[i].index = i
 	}
+
 	return myStructArray
 }
 
